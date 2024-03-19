@@ -16,8 +16,21 @@ Success response:
 }
 ```
 
-Get how much currency you have
-Transfer currency
+### Check Currency
+Description: Checks how much currency you have.
+Endpoint: /currency
+Method: `GET`
+Parameters:
+- username: string
+- currency-type: string
+Success response:
+```
+{
+  message: "success",
+  type: CURRENCY_TYPE,
+  amount: CURRENCY_COUNT
+}
+```
 
 ## Resources
 
