@@ -1,4 +1,5 @@
 ## API description
+The API for 3040Crypto that allows users to access market trends and their account information.
 
 ## Endpoints
 ### Getting Trends
@@ -23,7 +24,7 @@ Success response:
 ```
 
 ### Check Currency
-Description: Check how much currency you have.
+Description: Check how much currency you have.  
 Endpoint: `/currency`  
 Method: `GET`  
 Parameters:  
@@ -40,7 +41,7 @@ Success response:
 ```
 
 ## Resources
-
+TODO
 
 ### Sample request and response
 
