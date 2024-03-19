@@ -17,12 +17,12 @@ Success response:
 ```
 
 ### Check Currency
-Description: Checks how much currency you have.
-Endpoint: /currency
-Method: `GET`
-Parameters:
+Description: Checks how much currency you have.  
+Endpoint: /currency  
+Method: `GET`  
+Parameters:  
 - username: string
-- currency-type: string
+- currency-type: string  
 Success response:
 ```
 {
