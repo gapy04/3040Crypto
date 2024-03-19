@@ -3,7 +3,7 @@
 ## Endpoints
 ### Login
 Description: Authenticates users into the system.  
-Endpoint: /login  
+Endpoint: `/login`  
 Method: `POST`  
 Parameters:  
 - username: string
@@ -18,7 +18,7 @@ Success response:
 
 ### Check Currency
 Description: Checks how much currency you have.  
-Endpoint: /currency  
+Endpoint: `/currency`  
 Method: `GET`  
 Parameters:  
 - username: string
