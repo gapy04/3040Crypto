@@ -1,5 +1,5 @@
 ## API description
-The API for 3040Crypto allows users to access market trends and their account information. It also allows users to find out which currency is trending. They can check which date the currency peaked/ plummetted and the value of the currency at those times
+The API for 3040Crypto allows users to access market trends and their account information. It also allows users to find out which currency is trending. They can check which date the currency peaked/plummetted and the value of the currency at those times.
 
 ## Endpoints
 ### Getting Trends
@@ -23,8 +23,8 @@ Success response:
 }
 ```
 
-### Check Currency
-Description: Check how much currency you have.  
+### Check Currency Amount
+Description: Checks how much of a currency type you have.  
 Endpoint: `/currency`  
 Method: `GET`  
 Parameters:  
@@ -41,9 +41,27 @@ Success response:
 ```
 
 ## Resources
-TODO
-
-### Sample request and response
+### Trend Object
+```
+{
+  peak-date: datetime,
+  peak-value: integer,
+  lowest-date: datetime,
+  lowest-value: integer
+}
+```
+### UserDetails Object
+```
+{
+  username: string,
+  email: string,
+  phone-number: string,
+  country: string,
+  two-factor-auth: boolean,
+  date-registered: datetime
+}
+```
+## Sample request and response
 
 Endpoint: `/trends`  
 Sample request: ```https://3040Crypto.com/currency/trends?start-date="01-10-2024"&end-date="03-14-2024"```  
