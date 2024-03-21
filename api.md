@@ -3,7 +3,7 @@ The API for 3040Crypto allows users to access market trends and their account in
 
 ## Endpoints
 ### Getting Trends
-Description: Gets the market trends for the provided date range.  
+Description: Gets the market trends for most popular currency in the provided date range.  
 Endpoint: `/trends`  
 Method: `GET`  
 Parameters:  
@@ -14,11 +14,12 @@ Success response:
 ```
 {
   message: "success",
+  currency-type: MOST_POPULAR_CURRENCY_NAME,
   trends: {
-    peak-date: 02-11-2024,
-    peak-value: 1200,
-    lowest-date: 01-13-2024,
-    lowest-value: 200
+    peak-date: PEAK_DATE,
+    peak-value: HIGHEST_CURRENCY_VALUE,
+    lowest-date: LOWEST_DATE,
+    lowest-value: LOWEST_CURRENCY_VALUE
   }
 }
 ```
@@ -44,6 +45,7 @@ Success response:
 ### Trend Object
 ```
 {
+  currency-type: string,
   peak-date: datetime,
   peak-value: integer,
   lowest-date: datetime,
@@ -58,7 +60,10 @@ Success response:
   phone-number: string,
   country: string,
   two-factor-auth: boolean,
-  date-registered: datetime
+  date-registered: datetime,
+  currency: {
+    string: integer
+  }
 }
 ```
 ## Sample request and response
@@ -69,6 +74,7 @@ Sample response:
 ```
 {
   message: "success",
+  currency-type: "bitcoin",
   trends: {
     peak-date: 02-11-2024,
     peak-value: 1200,
