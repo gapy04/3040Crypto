@@ -1,5 +1,5 @@
 ## API description
-The API for 3040Crypto that allows users to access market trends and their account information.
+The API for 3040Crypto allows users to access market trends and their account information. It also allows users to find out which currency is trending. They can check which date the currency peaked/ plummetted and the value of the currency at those times
 
 ## Endpoints
 ### Getting Trends
